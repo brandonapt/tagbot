@@ -43,12 +43,6 @@ async function loadCommands() {
   }
 }
 
-(async () => {
-  loadCommands();
-  await app.start();
-
-  console.log("Tagbot is running on port 3000!");
-})();
 
 
 const server = express();
@@ -68,3 +62,11 @@ server.get('/invite/finish', (req, res) => {
 server.listen(80, () => {
     console.log("Server is running on port 80");
 });
+
+(async () => {
+    loadCommands();
+    await app.start();
+  
+    console.log("Tagbot is running on port 3000!");
+  })();
+  
