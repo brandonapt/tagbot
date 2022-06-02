@@ -1,0 +1,14 @@
+{
+  "name": "tagbot",
+  "version": "0.0.1",
+  "description": "a simple slack bot that allows for tags to be created and called, allowing for the removal of having to have common responses to common problems in a word document etc.",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "brandoge91",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.0.1"
+  }
+}
