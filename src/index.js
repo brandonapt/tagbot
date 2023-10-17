@@ -18,7 +18,7 @@ const app = new App({
   port: 3000,
 });
 
-app.message("hello", async ({ message, say }) => {
+app.message("tagbot", async ({ message, say }) => {
   await say(`Hey there <@${message.user}>!`);
 });
 
